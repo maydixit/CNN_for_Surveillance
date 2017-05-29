@@ -21,21 +21,19 @@ for i in range(frameStart, frameEnd, frameSkip):
         success,image = vidcap.read()
         if success:
                 print("Capturing Frame - "+ str(i))                                
-                if augment == "1":
-                	vertFlip = cv2.flip(image,1)
-                        # save frame as JPEG file
-                        cv2.imwrite("Cap-FlippedVert-" + str(frameName) + "-" + str(i) + ".jpg", vertFlip)
-                	horizFlip = cv2.flip(image,0)
-                        # save frame as JPEG file
-                        cv2.imwrite("Cap-FlippedHoriz-" + str(frameName) + "-" + str(i) + ".jpg", horizFlip)
-                	grayScale = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)                	
-                        # save frame as JPEG file
-                        cv2.imwrite("Cap-Grayscale-" + str(frameName) + "-" + str(i) + ".jpg", grayScale)
-                        #original image
-                        cv2.imwrite("Cap-" + str(frameName) + "-" + str(i) + ".jpg", image)     # save frame as JPEG file
-                else:
-                        print("other")
-                        cv2.imwrite("Cap-" + str(frameName) + "-" + str(i) + ".jpg", image)     # save frame as JPEG file
-
-
-print("Capture completed. Captured " + str(i) + " frames.")
+        if augment == "1":
+                vertFlip = cv2.flip(image,1)
+                # save frame as JPEG file
+                cv2.imwrite("Cap-FlippedVert-" + str(frameName) + "-" + str(i) + ".jpg", vertFlip)
+                horizFlip = cv2.flip(image,0)
+                # save frame as JPEG file
+                cv2.imwrite("Cap-FlippedHoriz-" + str(frameName) + "-" + str(i) + ".jpg", horizFlip)
+                grayScale = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)                	
+                # save frame as JPEG file
+                cv2.imwrite("Cap-Grayscale-" + str(frameName) + "-" + str(i) + ".jpg", grayScale)
+                #original image
+                cv2.imwrite("Cap-" + str(frameName) + "-" + str(i) + ".jpg", image)
+        else:
+                # save frame as JPEG file
+                cv2.imwrite("Cap-" + str(frameName) + "-" + str(i) + ".jpg", image)
+        print("Capture completed. Captured " + str(i) + " frames.")
