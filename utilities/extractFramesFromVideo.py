@@ -23,11 +23,14 @@ for i in range(frameStart, frameEnd, frameSkip):
                 print("Capturing Frame - "+ str(i))                                
                 if augment == "1":
                 	vertFlip = cv2.flip(image,1)
-                        cv2.imwrite("Cap-FlippedVert-" + str(frameName) + "-" + str(i) + ".jpg", vertFlip)     # save frame as JPEG file
+                        # save frame as JPEG file
+                        cv2.imwrite("Cap-FlippedVert-" + str(frameName) + "-" + str(i) + ".jpg", vertFlip)
                 	horizFlip = cv2.flip(image,0)
-                        cv2.imwrite("Cap-FlippedHoriz-" + str(frameName) + "-" + str(i) + ".jpg", horizFlip)     # save frame as JPEG file
+                        # save frame as JPEG file
+                        cv2.imwrite("Cap-FlippedHoriz-" + str(frameName) + "-" + str(i) + ".jpg", horizFlip)
                 	grayScale = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)                	
-                        cv2.imwrite("Cap-Grayscale-" + str(frameName) + "-" + str(i) + ".jpg", grayScale)     # save frame as JPEG file
+                        # save frame as JPEG file
+                        cv2.imwrite("Cap-Grayscale-" + str(frameName) + "-" + str(i) + ".jpg", grayScale)
                         #original image
                         cv2.imwrite("Cap-" + str(frameName) + "-" + str(i) + ".jpg", image)     # save frame as JPEG file
                 else:
