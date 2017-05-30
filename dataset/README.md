@@ -9,5 +9,15 @@ The dataset contains images from AVSS 2007 datset for abandoned luggage - http:/
 	> Validate
 	> Test
 
+**We have also applied image transformations like Flipped Orientation, Grayscale etc.. to increase our training/validation/test dataset**
 
-Here is the link to our dataset - https://drive.google.com/file/d/0B6XbSjc8SWZ2RmV2alFVU0Vpcjg/view?usp=sharing
+---
+
+Properties of our dataset
+* 9.3 GB dataset
+* 65,000 images
+* 30,000 abandoned luggage
+* 35,000 background images 
+
+Link to our dataset - https://drive.google.com/file/d/0B6XbSjc8SWZ2RmV2alFVU0Vpcjg/view?usp=sharing
+---
