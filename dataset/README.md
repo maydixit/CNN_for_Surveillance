@@ -20,4 +20,3 @@ Properties of our dataset
 * 35,000 background images 
 
 Link to our dataset - https://drive.google.com/file/d/0B6XbSjc8SWZ2RmV2alFVU0Vpcjg/view?usp=sharing
----
