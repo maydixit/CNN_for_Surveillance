@@ -29,4 +29,6 @@ For testing through bazel,
     --graph=/path/output_graph.pb --labels=/path/output_labels.txt \
     --output_layer=final_result \
     --image=/path/to/test/image
+
 For testing through python, change and run the python code classify.py
+python classify.py testimages/abandoned.jpg models/bag_detection.pb labels/bag_detection.txt
