@@ -6,9 +6,9 @@ import numpy as np
 import tensorflow as tf
 import sys
 
-imagePath = sys.argv[0]
-modelFullPath = sys.argv[1]
-labelsFullPath = sys.argv[2]
+imagePath = sys.argv[1]
+modelFullPath = sys.argv[2]
+labelsFullPath = sys.argv[3]
 
 
 def create_graph():
